@@ -12,5 +12,5 @@ int main()
 	{
 		_putchar(alph);
 	}
-	_putchar("\n");
+	_putchar('\n');
 } 
