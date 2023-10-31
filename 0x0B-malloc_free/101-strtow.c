@@ -6,7 +6,7 @@
  * wstrlen - Calculates position of a word in a str
  * @str: type char str
  * description: function that returns a value position
- * return: wstrlen 0
+ * Return: len
  */
 int wstrlen(char *str)
 {
@@ -22,7 +22,7 @@ int wstrlen(char *str)
  * wcounter - Counter of words in s str
  * @str: type char str
  * description: function that returns a value string
- * return: wcounter 0
+ * Return: w
  */
 int wcounter(char *str)
 {
