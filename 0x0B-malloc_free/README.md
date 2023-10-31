@@ -1,0 +1,1 @@
+dynamically allocating memory - malloc
