@@ -13,6 +13,7 @@ int sum_them_all(const unsigned int n, ...)
 	va_list numbers;
 	unsigned int i;
 	int sum = 0;
+
 	if (n == 0)
 	{
 		return (0);
@@ -24,4 +25,4 @@ int sum_them_all(const unsigned int n, ...)
 	}
 	va_end(numbers);
 	return (sum);
-} 
+}
