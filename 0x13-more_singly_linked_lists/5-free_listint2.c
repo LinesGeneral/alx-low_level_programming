@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -7,12 +8,16 @@
  */
 void free_listint2(listint_t **head)
 {
-	if (head == NULL)
-		return;
-	while (*head)
+	listint_t *current, *next;
+
+	current = *head;
+
+	while (current != NULL)
 	{
-		free(*head);
-		*head = (*head)->next;
+		next = current->next;
+		free(current);
+		current = next;
 	}
-	head = NULL;
+
+	*head = NULL;
 }
